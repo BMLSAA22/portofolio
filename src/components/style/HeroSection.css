@@ -1,0 +1,74 @@
+.HeroSection{
+    margin-top:10vh;
+    padding-top:3vh;
+    width:max(70vw,400px);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center
+}
+.HeroSection h1,.HeroSection span{
+  color: transparent;
+  background-clip: text;
+  font-size:max(7vw,25px);
+  background-image: linear-gradient(to right,#db2777, #3182ce);
+  font-weight: bolder;
+}
+.HeroSection span{
+    color:white;
+    
+}
+.HeroSection p{
+    color:grey;
+    font-size: max(1.5vw,7px);
+    padding:3vh 0;
+}
+.HeroSection .btns{ 
+    display:flex;
+    justify-content:space-around;
+    width:50%;
+}
+.HeroSection .btns *{
+    color:white;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+    font-size:max(1.3vw,15px);
+    cursor:pointer;
+}
+.cvBtn{
+   background: none;
+   border:2px;
+   border-style:double;
+   border-width: 2px;
+   border-color: #ec4899;
+   margin-left:10vw;
+
+  
+
+}
+.hireBtn{
+    border:none;
+    background-color:#ec4899;;
+}
+
+@media (max-width: 400px) {
+    .HeroSection{width:90vw}
+    .HeroSection .btns{
+        display: flex;
+        flex-direction: column;
+        margin :1vh 0;
+        width:80vw !important; 
+        
+    }
+    .HeroSection .btns *{
+       
+
+        width:100% !important; 
+        margin:1vh 0; 
+    }
+    
+
+    
+} 
+
+

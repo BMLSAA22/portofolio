@@ -1,0 +1,22 @@
+.navbar{
+    width:100vw;
+    height:10vh;
+    background: #1B1919;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    position:fixed;
+    z-index:200 !important
+}
+.links a{
+    padding:0 2vw;
+    color:grey;
+    font-size:1.5vw;
+   
+
+}
+.links a:hover{
+    
+    color:white;
+
+}

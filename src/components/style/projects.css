@@ -1,0 +1,65 @@
+.projects{
+    align-items:center;
+    justify-content:center;
+    align-content:center;
+    justify-items:center
+    
+}
+.projects .project-tabs *{
+
+
+    border:2px;
+    border-style:double;
+    border-width: 2px;
+    border-color: #ADB7BE;
+    border-radius: 20px;
+    padding: 2px 1vw;
+    
+}
+.projects .project-tabs *:hover{
+
+
+    
+    border-color: white;
+   
+    
+}
+.project-tabs{
+    
+    position: relative;
+    width:40%;
+    left:30%;
+    
+    display:flex;
+    justify-content: space-around;
+    font-size: max(1.5vw,15px);
+    margin:2vh 0;
+}
+
+.cards{
+    width:70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 400px) {
+
+    .cards{
+        width:70vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .project-tabs{
+    
+        
+        width:80%;
+        left:10%;}
+        
+       
+   
+  
+    
+  } 
