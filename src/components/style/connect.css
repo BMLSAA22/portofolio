@@ -11,12 +11,12 @@
     width:48%;
 }
 .contact div h1{
-    font-size:max(1.2vw,9px);
+    font-size:max(1.2vw,15px);
     font-weight:400
 
 }
 .contact div p{
-    font-size:max(0.9vw,5px);
+    font-size:max(0.9vw,12px);
     font-weight:400
 
 }
@@ -43,15 +43,19 @@ button[type="submit"]{
     position:absolute;
     background-color:grey;
     bottom:-20px;
-    height:2px;
+    height:1px;
     width:300vw;
     right:-100vw
 
     
 }
+.form *{
+    margin:.4vh 0;
+    padding-left: .5vw;
+}
 
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
    .contact{
     width:95vw;
     flex-direction: column;

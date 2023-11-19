@@ -1,0 +1,15 @@
+.footer{
+    margin-top:5vh;
+    width:100vw;
+    height:10vh;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.footer h1{
+    font-size: max(15px,2vw);
+}
+.footer p{
+    color:grey
+}

@@ -4,11 +4,12 @@
     justify-content: space-between;
     
     
+    
 }
 .about-me * {
     position: relative;
     width :48%;
-   
+    
 }
 .about-me-content img{
     width:100%;
@@ -16,6 +17,8 @@
     
 }
 .about-me-content{
+    
+   
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -24,29 +27,37 @@
 .tabs{
     
     position: relative;
-    /* width:100%; */
-    
+    width:80%;  
     display:flex;
-    justify-content: flex-start;
+    justify-content: start;
     font-size: max(1.5vw,15px);
     margin:2vh 0;
     
 }
-.tabs *{
-    padding:0px 5px;
+.tab{
+   
     border:none;
-    background: none;
     color: grey;
-    display: inline-block;
     cursor: pointer;
-    padding-right:5px;
     
+     
 }
-.tabs *:hover,.active-tab{
+.tab1{
+    position: relative;
+    width: 20%;
+    margin-right:13%;
+}
+
+
+.tab *:hover,.active-tab{
 
     color: white;
 
 }
+
+
+
+
 .tab-content{
     position: relative;
     display: flex;
@@ -54,7 +65,9 @@
     justify-content: center;
     width:100%;
     
+    
 }
+
 
 
 .active-tab{}
@@ -71,12 +84,12 @@
 }
 @keyframes expand {
     to {
-      width: 110%; /* Set the desired final height */
+      width: 100%; /* Set the desired final height */
     }
   }
 
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .about-me {
         display: flex;
         flex-direction: column;
@@ -86,6 +99,23 @@
     .about-me * {
         width:80vw
     }
+    .tabs{
+        width:80vw;
+        
+    }
+    .tab{
+        width:25vw
+
+    }
+    .tab h1{
+        font-size:0.8rem !important;
+    }
+    .tab1 {
+        width:15vw!important;
+        
+
+    }
+
 
     
 } 

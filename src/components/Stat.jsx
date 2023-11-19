@@ -1,14 +1,28 @@
 
 import './style/stat.css';
-import React, { useEffect } from 'react';
-import Typed from 'typed.js';
-const Stat = () => {
+import React, { useEffect ,useState} from 'react';
+
+const Stat = (props) => {
+  const [cnt, setcnt] = useState(0);
+  const updateCount = () => {
+    // Update the state, triggering a re-render
+    setcnt(cnt+1);
+  };
+  
+  
+    const intervalId = setInterval(updateCount, 10);
+    if (cnt==props.num){
+      clearInterval(intervalId);
+    }
+
+  
+    
     
   
     return (
       <div className='stat'>
-        <h1>15</h1>
-        <span>Projects</span>
+        <h1>{cnt}</h1>
+        <span>{props.title}</span>
     </div>
   );
 }

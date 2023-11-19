@@ -1,6 +1,6 @@
 .HeroSection{
     margin-top:10vh;
-    padding-top:3vh;
+    padding:3vh 0;
     width:max(70vw,400px);
     display:flex;
     flex-direction:column;
@@ -10,7 +10,7 @@
 .HeroSection h1,.HeroSection span{
   color: transparent;
   background-clip: text;
-  font-size:max(7vw,25px);
+  font-size:max(7vw,30px);
   background-image: linear-gradient(to right,#db2777, #3182ce);
   font-weight: bolder;
 }
@@ -51,7 +51,7 @@
     background-color:#ec4899;;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .HeroSection{width:90vw}
     .HeroSection .btns{
         display: flex;

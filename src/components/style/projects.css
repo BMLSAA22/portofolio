@@ -11,9 +11,9 @@
     border:2px;
     border-style:double;
     border-width: 2px;
-    border-color: #ADB7BE;
+    border-color: grey;
     border-radius: 20px;
-    padding: 2px 1vw;
+    padding: max(1vh,5px) max(1vw,5px);
     
 }
 .projects .project-tabs *:hover{
@@ -43,7 +43,7 @@
     justify-content: space-between;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
 
     .cards{
         width:70vw;

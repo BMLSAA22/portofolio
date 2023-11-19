@@ -1,6 +1,8 @@
 *{
   padding:0;
   margin:0;
+  font-family: 'Poppins';
+  
   
 }
 body{
@@ -10,6 +12,8 @@ body{
   align-items: center;
   justify-content: center;
   color:white;
+  overflow-x: hidden;
+  
   
 }
 
@@ -17,6 +21,7 @@ body{
 
 }
 .stats{
+  padding:.5vh .5vw;
   margin: 20vh 0;
   height:12vh;
   width:70vw;
@@ -28,6 +33,10 @@ body{
   border-style:double;
   border-width: 2px;
   border-color:grey;
+  overflow: hidden;
+}
+.stats *{
+  padding:-.7vw
 }
 
 @media (max-width: 400px) {
@@ -41,10 +50,16 @@ body{
     border:none;
     flex-direction: column;
     height:40vh;
-    width:10vw; 
+    width:30vw; 
     /* justify-content: space-around;
     border-color:red;
     border-width: 5px; */
+  }
+  h1{
+    font-size: 20px !important;
+  }
+  p,span{
+    font-size: 15px!important;
   }
  
 

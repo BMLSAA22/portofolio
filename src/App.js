@@ -8,6 +8,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import BIRDS from 'vanta/dist/vanta.birds.min'
 import NET from 'vanta/dist/vanta.net.min'
 import Contact from './components/contact';
+import Footer from './components/footer';
 
 
 
@@ -53,21 +54,29 @@ function App() {
           if (vantaEffect) vantaEffect.destroy()
         }
       }, [vantaEffect])
-      return <div ref={myRef} Style="width:100vw;  display: flex;flex-direction:column;
+      
+      return <><div ref={myRef} Style="width:100vw;  display: flex;flex-direction:column;
       align-items: center;">
         <Navbar></Navbar>
         <HeroSection></HeroSection>
-  <div className='stats'>
-    <Stat></Stat>
-    <Stat></Stat>
-    <Stat></Stat>
-    <Stat></Stat>
+   
+    </div>
+    <div Style="width:100vw;display:flex;flex-direction:column; align-items:center">
+    <div className='stats'>
+    <Stat num={5} title="projects"></Stat>
+    <Stat num={100} title="users"></Stat>
+    <Stat num={7} title="certifications"></Stat>
+    <Stat num={5} title="years"></Stat>
     </div>
     <AboutMe></AboutMe>
       
     <Projects></Projects>
-    <Contact></Contact>
+    <Contact></Contact> 
+    <Footer></Footer>
+
     </div>
+    </>
+    
 
 
 
